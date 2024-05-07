@@ -9,16 +9,29 @@ public class Main {
             arrayOne[2] = 3;
             for (int i = 0; i < arrayOne.length; i++) {
                 System.out.print(arrayOne[i]);
-                if (i < 2) {
+                if (i < arrayOne.length - 1) {
                     System.out.print(", ");
                 }
             }
+            System.out.print("\n");
             double[] arrayTwo = {1.57, 7.654, 9.986};
-            System.out.print("\n" + arrayTwo[0] + ", " + arrayTwo[1] + ", " + arrayTwo[2]);
+            for (int i = 0; i < arrayTwo.length; i++) {
+                System.out.print(arrayTwo[i]);
+                if (i < arrayTwo.length - 1) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.print("\n");
             int[] arrayThree = new int[2];
             arrayThree[0] = 7;
             arrayThree[1] = 8;
-            System.out.println("\n" + arrayThree[0] + ", " + arrayThree[1]);
+            for (int i = 0; i < arrayThree.length; i++) {
+                System.out.print(arrayThree[i]);
+                if (i < arrayThree.length - 1) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.print("\n");
         }
         System.out.println("Задание 3");
         {
@@ -32,12 +45,25 @@ public class Main {
                     System.out.print(", ");
                 }
             }
+            System.out.print("\n");
             double[] arrayTwo = {1.57, 7.654, 9.986};
-            System.out.print("\n" + arrayTwo[2] + ", " + arrayTwo[1] + ", " + arrayTwo[0]);
+            for (int i = arrayTwo.length - 1; i > -1; i--) {
+                System.out.print(arrayTwo[i]);
+                if (i > 0) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.print("\n");
             int[] arrayThree = new int[2];
             arrayThree[0] = 7;
             arrayThree[1] = 8;
-            System.out.println("\n" + arrayThree[1] + ", " + arrayThree[0]);
+            for (int i = arrayThree.length - 1; i > -1; i--) {
+                System.out.print(arrayThree[i]);
+                if (i > 0) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.print("\n");
         }
         System.out.println("Задание 4");
         {
@@ -46,9 +72,7 @@ public class Main {
                 if (arrayOne[i] % 2 != 0) {
                     arrayOne[i]++;
                     System.out.print(arrayOne[i] + ", ");
-                } else {
-                    System.out.print(arrayOne[i] + ", ");
-                }
+                } 
             }
         }
     }
